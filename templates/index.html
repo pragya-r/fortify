@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insurer's Portfolio Questionnaire</title>
+</head>
+<body>
+    <h1>Insurer's Portfolio Questionnaire</h1>
+    <p>Please fill out the following details about your business for insurance portfolio analysis:</p>
+    <form name="survey_form" action="/submit" method="post">
+        <fieldset>
+           <legend>Industry Sector:</legend>
+             <select name="industry_sector">
+                 <option value="technology">IT / Technology</option>
+                 <option value="consulting">Consulting</option>
+                 <option value="finance accounting">Finance & Accounting</option>
+                 <option value="media advertising">Media & Advertising</option>
+                 <option value="building design">Building Design</option>
+                 <option value="insurance professionals">Insurance Professionals</option>
+                 <option value="healthcare professionals">Healthcare Professionals</option>
+                 <option value="retail">Retail</option>
+                 <option value="non-profit">Non-profit</option>
+                 <option value="manufacturing">Manufacturing</option>
+             </select><br><br>
+        </fieldset>
+        <fieldset>
+          <legend>Industry Size:</legend>
+            <input type="radio" id="small" name="size" value="small">
+            <label for="small">Small enterprises: 10 to 49 persons employed</label><br>
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium">Medium-sized enterprises: 50 to 249 persons employed</label><br>
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">Large enterprises: 250 or more persons employed</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Data Risk:</legend>
+              <input type="radio" id="low" name="data" value="low">
+              <label for="low">Low</label><br>
+              <input type="radio" id="medium" name="data" value="medium">
+              <label for="medium">Medium</label><br>
+              <input type="radio" id="high" name="data" value="high">
+              <label for="high">High</label><br>
+          </fieldset>
+          <fieldset>
+            <legend>IT Security Level:</legend> 
+            <input type="range" id="security_level" name="security_level" min="0" max="0.95" step="0.01" value="0.5">
+          </fieldset>
+          <br>
+          <input type="submit" value="Submit">
+     </form>
+</body>
+</html>
