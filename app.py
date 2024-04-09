@@ -7,7 +7,11 @@ def index():
 
 @app.route("/submit", methods=["POST"])
 def submit():
-   return render_template('results.html', sector = request.form['industry_sector'], size = request.form['size'], data = request.form['data'], security = request.form['security_level'])
+   return render_template('results.html', 
+                          sector = request.form['industry_sector'], 
+                          size = request.form['size'], 
+                          data = request.form['data'], 
+                          security = request.form['security_level'])
 
 
 if __name__ == '__main__':
